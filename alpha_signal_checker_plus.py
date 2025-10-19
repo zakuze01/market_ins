@@ -73,7 +73,7 @@ def phan_tich_danh_sach_mã(danh_sach_mã):
     sentiment_data = lay_sentiment_lunarcrush(danh_sach_mã)
     kết_quả = []
 
-    for mã in danh_sách_mã:
+    for mã in danh_sach_mã:
         dữ_liệu = sentiment_data.get(mã, {})
         galaxy = dữ_liệu.get("galaxy_score", 0)
         alt_rank = dữ_liệu.get("alt_rank", 1000)
